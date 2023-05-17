@@ -8,8 +8,9 @@ Creating this landing page of Barbados for upcoming contest on SheCodes for the 
 | -------------- | ---------------------------------------------------------------- |
 | resolutionblue | ![#00267F](https://via.placeholder.com/10/00267F?text=+) #00267F |
 | ripemango      | ![#FFC726](https://via.placeholder.com/10/FFC726?text=+) #FFC726 |
-| black          | ![#000000](https://via.placeholder.com/10/000000?text=+) #000000 |
+| bitterblack    | ![#1d1615](https://via.placeholder.com/10/1d1615?text=+) #1d1615 |
+| offwhite       | ![#f5f5f5](https://via.placeholder.com/10/f5f5f5?text=+) #f5f5f5 |
 
 # Appendix
 
-Images and icons were used by flaticons, unsplash, and stockvault. Colors were used by [color-name](https://www.color-name.com/)
+Images and icons were used by flaticons, unsplash, stockvault, Google. Colors were used by [color-name](https://www.color-name.com/)
