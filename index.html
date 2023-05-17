@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Welcome to Barbados</title>
+    <title>Visit Barbados</title>
 
     <link
       rel="stylesheet"
@@ -17,27 +17,152 @@
       :root {
         --resolutionblue: #00267f;
         --ripemango: #ffc726;
+        --offwhite: #f5f5f5;
+        --bitterblack: #1d1615;
       }
 
       * {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
+        font-family: "Metrophobic", sans-serif;
+        text-decoration: none;
+        outline: none;
+        border: none;
+        text-transform: capitalize;
+        transition: all 0.2s linear;
+        scroll-behavior: smooth;
+      }
+
+      header {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1000;
+        width: 100%;
+        background: transparent;
+        padding: 2rem 9%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        transition: ease 0.5s;
+      }
+
+      header .logo img {
+        font-size: 2.3rem;
+        height: 7rem;
+        padding-left: 0.5rem;
+      }
+
+      header .navbar a {
+        font-size: 1.5rem;
+        color: var(--resolutionblue);
+        margin: 0 1rem;
+      }
+
+      /* Home section */
+      section {
+        padding: 2rem 9%;
+      }
+
+      .home {
+        padding-top: 12rem;
+        background: url(bridgetown_barbados.jpg) no-repeat;
+        background-size: cover;
+        background-position: center;
+        min-height: 100vh;
+        width: 100%;
+      }
+
+      .home .row {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+      }
+
+      .home .row .content {
+        flex: 1 1 45rem;
+        text-align: center;
+        line-height: 6rem;
+      }
+
+      .home .content h2 {
+        font-size: 5rem;
+        font-weight: 400;
+        color: var(--offwhite);
+      }
+
+      .countryText {
+        margin: 0;
+        line-height: 10rem;
+        font-size: 7.5rem;
+        font-weight: 800;
+        color: transparent;
+        text-transform: uppercase;
+        animation: Color-change 5s infinite alternate;
+        background-size: auto;
+      }
+
+      @keyframes Color-change {
+        0% {
+          color: var(--resolutionblue);
+          transform: translateY(0rem);
+        }
+
+        14% {
+          color: var(--resolutionblue);
+          transform: translateY(1.1rem);
+        }
+        28% {
+          color: var(--ripemango);
+          transform: translatey(0rem);
+        }
+
+        42% {
+          color: var(--ripemango);
+          transform: translatey(0rem);
+        }
+        56% {
+          color: var(--bitterblack);
+          transform: translatey(1.1rem);
+        }
+        70% {
+          color: var(--bitterblack);
+          transform: translatey(0rem);
+        }
+        84% {
+          color: var(--ripemango);
+          transform: translatey(1.1rem);
+        }
+        100% {
+          color: var(--resolutionblue);
+          transform: translatey(0rem);
+        }
       }
     </style>
   </head>
 
   <body>
-    <!-- Header section -->
-    <section class="row-container">
-      <a href="" class="logo"
-        ><img src="Barbados_color.png" alt="flag of Barbados"
-      /></a>
+    <!-- Navbar header section -->
+    <header>
+      <a href="#" class="logo"><img src="barbados.png" alt="map" /></a>
       <nav class="navbar">
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Contact</a>
+        <a href="#home" class="active">home</a>
+        <a href="#about">about</a>
+        <a href="#explore">explore</a>
+        <a href="#activities">activities</a>
       </nav>
+    </header>
+    <!-- Home section -->
+    <section id="home" class="home">
+      <div class="row">
+        <div class="content">
+          <h2>Let's visit</h2>
+          <span class="countryText">Barbados</span>
+        </div>
+      </div>
     </section>
   </body>
 </html>
