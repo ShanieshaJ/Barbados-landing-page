@@ -13,4 +13,4 @@ Creating this landing page of Barbados for upcoming contest on SheCodes for the 
 
 # Appendix
 
-Images and icons were used by flaticons, unsplash, stockvault, Google. Colors were used by [color-name](https://www.color-name.com/)
+Images and icons were used by flaticons, unsplash, stockvault, Google. Colors were used by [color-name](https://www.color-name.com/). [Barbados political map](https://blankmapsrepo.com/barbados-political-map/)
