@@ -304,10 +304,20 @@
     <!-- Script section -->
     <script>
       const header = document.querySelector("header");
+      let mapImg = document.querySelector("img");
 
       window.addEventListener("scroll", function () {
         header.classList.toggle("sticky", window.scrollY > 0);
       });
+
+      window.addEventListener("scroll", function () {
+        if(window.scrollY > 0){
+          mapImg.setAttribute("src", "barbados-logo-clear.png");
+        }
+        else{
+          mapImg.setAttribute("src", "barbados-logo-black.png");
+        }
+      })
     </script>
   </body>
 </html>
