@@ -34,5 +34,5 @@ TBD
 - Barbados flag color codes were used by [flagcolorcodes](https://www.flagcolorcodes.com/barbados).
 - Images and icons were used by flaticons, unsplash, stockvault, Google.
 - [Barbados SVG map](https://simplemaps.com/resources/svg-bb)
-- [Barbados fact 1] (https://thecommonwealth.org/our-member-countries/barbados)
-- [Barbados fact 2](https://www.visitbarbados.org/)
+- Country information [Barbados fact 1](https://thecommonwealth.org/our-member-countries/barbados).
+- Parishes, activities information [Barbados fact 2](https://www.visitbarbados.org/).
