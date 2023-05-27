@@ -2,9 +2,10 @@
 
 Creating this landing page of Barbados for upcoming contest on SheCodes for the month of May. This single is designed by using HTML, CSS, and JavaScript. This page will be responsive.
 
-# Lesson Learned
+# Tasks
 
-TBD
+- Include image gallery
+- Fun facts
 
 # Color Reference
 
