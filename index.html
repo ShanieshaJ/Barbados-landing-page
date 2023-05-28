@@ -238,6 +238,64 @@
         padding: 1rem 0;
         text-transform: none;
       }
+
+      /* Activities section */
+      .activities {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+      }
+      .activities .content {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 3rem;
+      }
+      .activities .content h3 {
+        font-size: 2.3rem;
+        color: var(--ultramarine);
+        line-height: 1.8;
+      }
+
+      .activities .content p {
+        font-size: 1.05rem;
+        line-height: 1.8;
+        color: var(--bitterblack);
+        padding: 1rem 0;
+      }
+
+      .activities-gallery {
+        background-color: var(--offwhite);
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(1, 30vw);
+        padding: 0 3rem;
+      }
+
+      .gallery-img {
+        width: 100%;
+        height: 100%;
+        display: block;
+        object-fit: cover;
+      }
+
+      figure {
+        border: thin var(--bitterblack) solid;
+        margin: auto;
+        display: flex;
+        flex-flow: column;
+        max-width: 250px;
+        padding: 0.01rem;
+      }
+
+      figcaption {
+        background-color: var(--bitterblack);
+        text-align: center;
+        font-size: 1rem;
+        font-style: italic;
+        font-weight: 700;
+        color: var(--offwhite);
+      }
     </style>
   </head>
 
@@ -410,7 +468,140 @@
     </section>
 
     <!-- Activities section -->
-    <section id="activities" class="activities"></section>
+    <main id="activities" class="activities">
+      <section class="content">
+        <h3>Activities to do</h3>
+        <p>
+          Each place in Barbados has a story, every meal is a unique experience.
+          And each day promises new experiences, discoveries and memories to
+          last a lifetime. Many of these experiences are to be once in a
+          lifetime type of trip, but quickly discover that it's the a kind of
+          place you want to come back again to from time to time. With lots to
+          do, you'll have the best time.
+        </p>
+
+        <div class="activities-gallery">
+          <figure class="gallery-img-1">
+            <img src="culinary.jpeg" alt="food" class="gallery-img" />
+            <figcaption>Culinary</figcaption>
+          </figure>
+
+          <figure class="gallery-img-2">
+            <img src="beaches_activities.jpg" alt="beach" class="gallery-img" />
+            <figcaption>beaches & activities</figcaption>
+          </figure>
+
+          <figure class="gallery-img-3">
+            <img src="wedding_romance.jpg" alt="romance" class="gallery-img" />
+            <figcaption>weddings & romance</figcaption>
+          </figure>
+
+          <figure class="gallery-img-4">
+            <img src="birthplace_of_rum.jpg" alt="history of rum"
+            class="gallery-img"">
+            <figcaption>birthplace of rum</figcaption>
+          </figure>
+
+          <figure class="gallery-img-5">
+            <img
+              src="activities_attractions.jpg"
+              alt="cave climbing"
+              class="gallery-img"
+            />
+            <figcaption>activities & attractions</figcaption>
+          </figure>
+
+          <figure class="gallery-img-6">
+            <img
+              src="adventure.jpeg"
+              alt="underwater adventure"
+              class="gallery-img"
+            />
+            <figcaption>adventure</figcaption>
+          </figure>
+
+          <figure class="gallery-img-7">
+            <img src="nightlife.jpg" alt="festival" class="gallery-img" />
+            <figcaption>nightlife</figcaption>
+          </figure>
+
+          <figure class="gallery-img-8">
+            <img src="music_arts.jpg" alt="music" class="gallery-img" />
+            <figcaption>music & arts</figcaption>
+          </figure>
+
+          <figure class="gallery-img-9">
+            <img
+              src="history_heritage.jpg"
+              alt="history and heritage"
+              class="gallery-img"
+            />
+            <figcaption>history & heritage</figcaption>
+          </figure>
+
+          <figure class="gallery-img-10">
+            <img src="nature_wildlife.jpg" alt="nature" class="gallery-img" />
+            <figcaption>nature & wildlife</figcaption>
+          </figure>
+
+          <figure class="gallery-img-11">
+            <img src="wellness.jpg" alt="fitness" class="gallery-img" />
+            <figcaption>wellness</figcaption>
+          </figure>
+
+          <figure class="gallery-img-12">
+            <img src="towns_landmarks.jpg" alt="town" class="gallery-img" />
+            <figcaption>towns & landmarks</figcaption>
+          </figure>
+
+          <figure class="gallery-img-13">
+            <img
+              src="meetings_conferences.jpg"
+              alt="meetup"
+              class="gallery-img"
+            />
+            <figcaption>meetings & conferences</figcaption>
+          </figure>
+
+          <figure class="gallery-img-14">
+            <img
+              src="barbados-limegrove-shopping.jpg"
+              alt="shopping"
+              class="gallery-img"
+            />
+            <figcaption>shopping</figcaption>
+          </figure>
+
+          <figure class="gallery-img-15">
+            <img src="sports.jpg" alt="sports" class="gallery-img" />
+            <figcaption>sports</figcaption>
+          </figure>
+
+          <figure class="gallery-img-16">
+            <img
+              src="unesco.jpg"
+              alt="world heritage site"
+              class="gallery-img"
+            />
+            <figcaption>unesco - world heritage</figcaption>
+          </figure>
+
+          <figure class="gallery-img-17">
+            <img
+              src="sustainable_tourism.jpg"
+              alt="farming"
+              class="gallery-img"
+            />
+            <figcaption>sustainable tourism</figcaption>
+          </figure>
+
+          <figure class="gallery-img-18">
+            <img src="luxury.jpg" alt="luxury" class="gallery-img" />
+            <figcaption>luxury</figcaption>
+          </figure>
+        </div>
+      </section>
+    </main>
 
     <!-- Script section -->
     <script>
