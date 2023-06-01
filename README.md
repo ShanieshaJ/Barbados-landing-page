@@ -1,6 +1,6 @@
 # Barbados landing page
 
-Creating this landing page of Barbados for upcoming contest on SheCodes for the month of May. This single is designed by using HTML, CSS, and JavaScript. This page will be responsive.
+Creating this landing page of Barbados for the month of May. This single is designed by using HTML, CSS, and JavaScript. This page will be responsive.
 
 # Tasks
 
