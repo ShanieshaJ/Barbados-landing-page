@@ -4,7 +4,6 @@ Creating this landing page of Barbados for the month of May. This single is desi
 
 # Tasks
 
-- Include image gallery
 - Fun facts
 
 # Color Reference
