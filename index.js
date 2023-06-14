@@ -76,3 +76,17 @@ for (let i = 1; i <= 11; i++) {
     tooltip.style.display = "none";
   });
 });
+
+//Menu button size change when window is resized
+let menuBtn = document.querySelector("#menuBtn");
+let navbar = document.querySelector(".navbar");
+
+menuBtn.onClick = () => {
+  menuBtn.classList.toggle("fa-times");
+  navbar.classList.toggle("active");
+};
+
+window.onscroll = () => {
+  menuBtn.classList.remove("fa-times");
+  navbar.classList.remove("active");
+};

@@ -49,6 +49,13 @@
         color: var(--ripemango);
     }
 
+    #menu-btn {
+        font-size: 3rem;
+        color: var(--bitterblack);
+        cursor: pointer;
+        display: none;
+    }
+
     header.sticky {
         position: fixed;
         top: 0;
@@ -214,7 +221,7 @@
         flex: 1 1 42rem;
     }
 
-    .about .row .content h3 {
+    .about .row .content .countryInfo {
         font-size: 2.3rem;
         color: var(--ultramarine);
         line-height: 1.8;
@@ -287,4 +294,100 @@
         font-style: italic;
         font-weight: 700;
         color: var(--offwhite);
+    }
+
+    /*responsive*/
+    @media screen and (max-width: 991px) {
+        header {
+            padding: 2rem;
+            transition: 2s;
+        }
+
+        header.sticky {
+            padding: 1rem 5%;
+            transition: 2s;
+        }
+
+        html {
+            font-size: 55%;
+        }
+
+        .sticky .navbar a {
+            font-size: 1.2rem;
+            color: var(--offwhite);
+            margin: 0 1rem;
+        }
+
+        section {
+            padding: 2rem;
+            transition: 2s;
+        }
+
+    }
+
+    @media screen and (max-width: 768px) {
+        header .logo img {
+            display: none;
+        }
+
+        .home {
+            height: 88vh;
+        }
+
+        .navbar {
+            position: absolute;
+            top: 0;
+            right: -100%;
+            width: 270px;
+            height: 120vh;
+            background: transparent;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 1rem 2rem;
+            transition: 0.5s all;
+        }
+
+        .navbar a {
+            display: block;
+            margin: 1rem 0;
+        }
+
+        .sticky .navbar a {
+            font-size: 1.2rem;
+            color: var(--offwhite);
+            margin: 0 1rem;
+        }
+
+        .sticky .logo img {
+            font-size: 1.5rem;
+            height: 5rem;
+            padding-left: 0.5rem;
+        }
+
+        #menu-btn {
+            display: initial;
+        }
+
+        #menu-btn.fa-times {
+            transform: rotate(180deg);
+        }
+
+        .countryInfo {
+            font-size: 6rem;
+        }
+
+    }
+
+
+    @media screen and (max-width: 450px) {
+        html {
+            font-size: 50%;
+        }
+
+        .home {
+            height: 85vh;
+            transition: 0.2s;
+        }
+
     }
