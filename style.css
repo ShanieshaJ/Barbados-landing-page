@@ -26,11 +26,11 @@
         z-index: 1000;
         width: 100%;
         background: transparent;
-        padding: 2rem 9%;
+        padding: 1rem 5%;
         display: flex;
         align-items: center;
         justify-content: space-between;
-        transition: ease 0.5s;
+        transition: ease .40s;
     }
 
     header .logo img {
@@ -43,6 +43,9 @@
         font-size: 1.2rem;
         color: var(--ultramarine);
         margin: 0 1rem;
+        padding: 0 0.5rem;
+        transition: 0.3s;
+        transition-property: color, background;
     }
 
     header .navbar a:hover {
@@ -62,6 +65,7 @@
         right: 0;
         left: 0;
         z-index: 1000;
+        width: 100%;
         background: var(--ultramarine);
         padding: 1rem 5%;
         display: flex;
@@ -73,6 +77,9 @@
         font-size: 1.2rem;
         color: var(--offwhite);
         margin: 0 1rem;
+        padding: 0 0.5rem;
+        transition: 0.3s;
+        transition-property: color, background;
     }
 
     .sticky .navbar a:hover {
@@ -297,20 +304,48 @@
     }
 
     /*responsive*/
-    @media screen and (max-width: 991px) {
+    @media screen and (max-width: 1040px) {
+
+        #menu-btn {
+            display: initial;
+        }
+
+        .sticky #menu-btn {
+            color: var(--bitterblack);
+        }
+
+        .home {
+            height: 88vh;
+        }
+
+        .navbar {
+            position: absolute;
+            top: 99%;
+            right: 0;
+            width: 270px;
+            height: 100vh;
+            background: var(--ultramarine);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 1.5rem 3rem;
+            transition: 0.5s all;
+        }
+
+        header .navbar a {
+            display: block;
+            color: var(--offwhite);
+            margin: 1.2rem 0;
+        }
+
         header {
-            padding: 2rem;
-            transition: 2s;
+            padding: 1rem 5%;
         }
 
         header.sticky {
             padding: 1rem 5%;
-            transition: 2s;
         }
 
-        html {
-            font-size: 55%;
-        }
 
         .sticky .navbar a {
             font-size: 1.2rem;
@@ -320,43 +355,51 @@
 
         section {
             padding: 2rem;
-            transition: 2s;
         }
 
     }
 
     @media screen and (max-width: 768px) {
+        .countryText {
+            font-size: 6rem;
+        }
+
+        header .navbar {
+            position: absolute;
+            top: 99%;
+            left: 0;
+            right: 0;
+        }
+
+
+        header .navbar a {
+            display: block;
+            font-size: 2.2rem;
+            margin: 0;
+            color: var(--offwhite);
+            padding: 1.5rem 1rem;
+            border-left: 0.2rem solid var(--bitterblack);
+
+        }
+
         header .logo img {
             display: none;
         }
 
         .home {
-            height: 88vh;
+            text-align: center;
         }
 
-        .navbar {
-            position: absolute;
-            top: 0;
-            right: -100%;
-            width: 270px;
-            height: 120vh;
-            background: transparent;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding: 1rem 2rem;
-            transition: 0.5s all;
-        }
-
-        .navbar a {
-            display: block;
-            margin: 1rem 0;
+        .home .row .content h2 {
+            font-size: 4rem;
         }
 
         .sticky .navbar a {
-            font-size: 1.2rem;
+            font-size: 2.2rem;
             color: var(--offwhite);
-            margin: 0 1rem;
+            margin: 0;
+            padding: 1.5rem 1rem;
+            border-left: 0.2rem solid var(--bitterblack);
         }
 
         .sticky .logo img {
@@ -373,9 +416,7 @@
             transform: rotate(180deg);
         }
 
-        .countryInfo {
-            font-size: 6rem;
-        }
+
 
     }
 

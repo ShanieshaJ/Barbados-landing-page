@@ -5,7 +5,7 @@ window.addEventListener("scroll", function () {
   header.classList.toggle("sticky", window.scrollY > 0);
 });
 
-// Map logo on scroll
+// Map logo change on scroll
 let mapImg = document.querySelector("img");
 
 window.addEventListener("scroll", function () {
@@ -78,15 +78,15 @@ for (let i = 1; i <= 11; i++) {
 });
 
 //Menu button size change when window is resized
-let menuBtn = document.querySelector("#menuBtn");
-let navbar = document.querySelector(".navbar");
+let menuBtn = document.querySelector("#menu-btn");
+let menu = document.querySelector(".navbar");
 
-menuBtn.onClick = () => {
+menuBtn.onclick = () => {
   menuBtn.classList.toggle("fa-times");
-  navbar.classList.toggle("active");
+  menu.classList.toggle("active");
 };
 
-window.onscroll = () => {
+menuBtn.onscroll = () => {
   menuBtn.classList.remove("fa-times");
-  navbar.classList.remove("active");
+  menu.classList.remove("active");
 };
